@@ -1,0 +1,6 @@
+{
+  "name": "은면리",
+  "description": "낯병의 저주에 걸린 숨겨진 마을. 흑사포를 벗기는 것이 고백이고, 이름을 기억하는 것이 구원인 마을.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

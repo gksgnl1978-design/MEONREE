@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1a1a1a;
+  --color-ink-light: #2a2a2a;
+  --color-bg-dark: #0a1112;
+  --color-bg-paper-dark: #a49b89;
+  --color-talisman: #e74c3c;
+  --color-lantern: #e6af2e;
+  --color-wood: #1a1a1a;
+  --color-mist: #8b9898;
+  --color-ghost: #d9cdb8;
+
+  --font-title: "Gowun Batang", serif;
+  --font-body: "Noto Serif KR", serif;
+}
+
+@layer utilities {
+  .bg-noise {
+    filter: blur(80px);
+    background-image: repeating-radial-gradient(circle at 0 0, #fff 0, #0000 50px);
+  }
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  font-family: var(--font-body);
+  color: var(--color-ghost);
+  background-image: radial-gradient(circle, #132a2e, #0a1112);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+body ::selection {
+  background-color: var(--color-talisman);
+  color: #fff;
+}
